@@ -10,11 +10,17 @@ subgraph CloudFront
   Cache_Policy
   Security_Header
   Origin_Access_Control
+  Origin_Access_Control_logging
 end
 
 subgraph S3
   Bucket_Policy
   Static_Website_Hosting
+end
+
+subgraph S3_logging
+  Bucket_Policy_logging
+  log
 end
 
 subgraph ACM
@@ -38,4 +44,8 @@ CloudFront --> Cert
 Origin_Access_Control --> Bucket_Policy
 
 CDN --> Static_Website_Hosting
+
+Origin_Access_Control_logging --> Bucket_Policy_logging
+
+CloudFront --> log
 ```
