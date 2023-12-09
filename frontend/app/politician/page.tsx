@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import utilStyles from '../../styles/utils.module.css';
 
-export default function politicianIndex() {
+export default function Page() {
   return (
       <div>
-        <h1>This is politician's root page</h1>
+        <h1>This is politician&apos;s root page</h1>
         <ul className={utilStyles.list}>
           <li className={utilStyles.listItem}>
             <Link href="/politician/activity">ACTIVITY</Link>

@@ -28,10 +28,14 @@ function getPost({ slug } : {slug : string}) {
   }
 } 
 
+type Prop = {
+  params : {slug : string}, 
+  searchParams: 
+    { [key: string]: string | string[] | undefined };
+}
 
-
-export default function Page({ params } : any ) {
-  const post = getPost(params);
+export default function Page(prop : Prop ) {
+  const post = getPost(prop.params);
   
   return (
     <MDXRemote source={post.content} options={{...getMdxOptions()}}/>
