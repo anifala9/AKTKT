@@ -14,6 +14,8 @@ export default function Layout({ children} : {
   children : React.ReactNode,
 }) {
   return (
+    <html lang = "ja">
+    <body>
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
@@ -51,6 +53,8 @@ export default function Layout({ children} : {
       </header>
       <main>{children}</main>
     </div>
+    </body>
+    </html>
   );
 }
 
