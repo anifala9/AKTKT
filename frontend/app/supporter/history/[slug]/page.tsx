@@ -34,13 +34,6 @@ export default function Page({ params } : any ) {
   const post = getPost(params);
   
   return (
-      //<article className='prose prose-sm md:prose-base lg:prose-lg prose-slate !prose-invert mx-auto'>
-      //  <h1>{props.frontMatter.title}</h1>
-
-        //{/* @ts-expect-error Server Component*/}
-        <>
-          <MDXRemote source={post.content} options={{...getMdxOptions()}}/>
-        </>
+    <MDXRemote source={post.content} options={{...getMdxOptions()}}/>
   )
-      //</article>
 }
