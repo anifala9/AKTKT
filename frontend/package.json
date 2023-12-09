@@ -3,7 +3,8 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "start": "npx serve@latest out"
+    "start": "npx serve@latest out",
+    "lint": "eslint --ext .ts,.js,.tsx . --fix "
   },
   "dependencies": {
     "@mdx-js/loader": "^3.0.0",
@@ -31,6 +32,12 @@
   "devDependencies": {
     "@types/node": "20.8.6",
     "@types/react": "18.2.28",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint-config-next": "^14.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "prettier": "^3.1.0",
     "typescript": "5.2.2"
   }
 }
