@@ -3,7 +3,8 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "start": "npx serve@latest out"
+    "start": "npx serve@latest out",
+    "lint": "eslint --ext .ts,.js,.tsx . --fix "
   },
   "dependencies": {
     "@mdx-js/loader": "^3.0.0",
@@ -12,12 +13,17 @@
     "@types/mdx": "^2.0.10",
     "date-fns": "^2.29.3",
     "gray-matter": "^4.0.3",
+    "install": "^0.13.0",
     "next": "^14.0.2",
+    "next-mdx-remote": "^4.4.1",
+    "npm": "^10.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-twitter-embed": "^4.0.4",
     "rehype-pretty-code": "^0.10.2",
+    "rehype-slug": "^6.0.0",
     "remark": "^14.0.2",
-    "remark-gfm": "^4.0.0",
+    "remark-gfm": "^3.0.1",
     "remark-html": "^15.0.1",
     "remark-slug": "^7.0.1"
   },
@@ -27,6 +33,12 @@
   "devDependencies": {
     "@types/node": "20.8.6",
     "@types/react": "18.2.28",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint-config-next": "^14.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "prettier": "^3.1.0",
     "typescript": "5.2.2"
   }
 }
