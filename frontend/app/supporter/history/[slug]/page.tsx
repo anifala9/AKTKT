@@ -1,6 +1,6 @@
 import { MDXRemote } from "next-mdx-remote/rsc"
 import { getMdxSlugs, getPost } from "../../../../lib/utilPosts"
-import { getMdxOptions } from "../../../../lib/mdxHelper" 
+import { GetAllMDXComponents, getMdxOptions } from "../../../../lib/mdxHelper" 
 
 const dir = "/supporter/history"
 
@@ -20,6 +20,6 @@ export default function Page(prop : Prop ) {
   const post = getPost(prop.params.slug, dir);
   
   return (
-    <MDXRemote source={post.content} options={{...getMdxOptions()}}/>
+    <MDXRemote source={post.content} components={{...GetAllMDXComponents()}}  options={{...getMdxOptions()}}/>
   )
 }
