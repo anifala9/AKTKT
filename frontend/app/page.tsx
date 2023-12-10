@@ -30,7 +30,7 @@ export default function Page() {
         <p>For the future of our town, AKTKT!</p>
       </section>
       {<div>
-        Updated contents.
+        Latest contents.
         {latests.map(s => (
             <div key={s.link}>
               <Link href = {s.link} passHref key={s.link}>
