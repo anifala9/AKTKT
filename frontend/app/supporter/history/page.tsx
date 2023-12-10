@@ -9,7 +9,6 @@ export default function Page () {
       <div>
         <h1>This is supporter&apos;s history page</h1>
         <div>
-          
           {slugs.map(s => (
             <div key={s.slug}>
               <Link href = {'/supporter/history/' + s.slug} passHref key={s.slug}>
