@@ -7,6 +7,7 @@ import navStyles from './Navbar.module.css';
 
 import Link from 'next/link';
 
+
 const name = 'AKTKT';
 
 export default function Layout({ children} : {

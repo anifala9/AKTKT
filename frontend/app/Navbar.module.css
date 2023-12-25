@@ -37,7 +37,7 @@
 /*スマホ対応*/
 @media screen and (max-width: 640px) {
   .nav {
-      background-color: #0183a0;
+      /*background-color: #0183a0;*/
       height: 150px;
   }
 
