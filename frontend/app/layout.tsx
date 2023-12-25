@@ -32,9 +32,9 @@ export default function Layout({ children} : {
         <nav className={navStyles.nav}>
         <ul>
             <li><Link href="/">TOP</Link></li>
-            <li><Link href="/politician">POLITICIAN</Link></li>
-            <li><Link href="/supporter">SUPPORTER</Link></li>
-            <li><Link href="/future-politician">FUTURE-POLITICIAN</Link></li>
+            <li><Link href="/politician">政治家</Link></li>
+            <li><Link href="/supporter">後援会</Link></li>
+            <li><Link href="/future-politician">未来の政治家</Link></li>
         </ul>
         </nav>
       }

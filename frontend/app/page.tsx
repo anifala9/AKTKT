@@ -30,7 +30,7 @@ export default function Page() {
         <p>For the future of our town, AKTKT!</p>
       </section>
       {<div>
-        Latest contents.
+        更新履歴
         {latests.map(s => (
             <div key={s.link}>
               <Link href = {s.link} passHref key={s.link}>
