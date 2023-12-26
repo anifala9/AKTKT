@@ -15,7 +15,7 @@ const latests : Contents[] = [
     comment: "Twitter 埋め込み"
   },
   {
-    link: "/supporter/history/20231208_mdtest",
+    link: "/supporter/history/20231208_2020_election_activity_report",
     comment: "Markdownでコンテンツを記述できる。Youtube埋め込みも可能"
   }
 ];

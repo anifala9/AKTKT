@@ -1,11 +1,15 @@
+'use client'
+
 import Head from 'next/head';
 import Image from 'next/image';
 
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
-import navStyles from './Navbar.module.css';
+//import navStyles from './Navbar.module.css';
 
-import Link from 'next/link';
+import Header from '../components/header';
+
+
 
 
 const name = 'AKTKT';
@@ -28,16 +32,7 @@ export default function Layout({ children} : {
           content="/images/profile.jpg"
         />
       </Head>
-      {
-        <nav className={navStyles.nav}>
-        <ul>
-            <li><Link href="/">TOP</Link></li>
-            <li><Link href="/politician">政治家</Link></li>
-            <li><Link href="/supporter">後援会</Link></li>
-            <li><Link href="/future-politician">未来の政治家</Link></li>
-        </ul>
-        </nav>
-      }
+      <Header/>
       <header className={styles.header}>
           <>
             <Image
@@ -48,7 +43,6 @@ export default function Layout({ children} : {
               width={144}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
       </header>
       <main>{children}</main>
