@@ -33,7 +33,10 @@ export default function Page() {
         更新履歴
         {latests.map(s => (
             <div key={s.link}>
-              <Link href = {s.link} passHref key={s.link}>
+              <Link 
+                href = {s.link} 
+                passHref 
+                key={s.link}>
               {s.link}   :  {s.comment} 
               </Link>
             </div>

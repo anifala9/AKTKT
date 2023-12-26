@@ -12,7 +12,7 @@ export default function Page() {
     <TwitterTimelineEmbed
       sourceType="profile"
       screenName="shinji_ishimaru"
-      options={{height: 400}}
+      options={{height: 900}}
     />
   </div>
   )
