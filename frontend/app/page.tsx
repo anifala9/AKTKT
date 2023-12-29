@@ -15,7 +15,7 @@ const latests : Contents[] = [
     comment: "Twitter 埋め込み"
   },
   {
-    link: "/supporter/history/20231208_mdtest",
+    link: "/supporter/history/20231208_2020_election_activity_report",
     comment: "Markdownでコンテンツを記述できる。Youtube埋め込みも可能"
   }
 ];
@@ -30,10 +30,13 @@ export default function Page() {
         <p>For the future of our town, AKTKT!</p>
       </section>
       {<div>
-        Latest contents.
+        更新履歴
         {latests.map(s => (
             <div key={s.link}>
-              <Link href = {s.link} passHref key={s.link}>
+              <Link 
+                href = {s.link} 
+                passHref 
+                key={s.link}>
               {s.link}   :  {s.comment} 
               </Link>
             </div>

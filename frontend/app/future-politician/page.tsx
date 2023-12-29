@@ -1,7 +1,7 @@
 export default function Page() {
   return (
       <div>
-        <h1>This is future politician&apos;s root page</h1>
+        <h1>未来の政治家</h1>
       </div>
   )
 }

@@ -7,7 +7,7 @@ export default function Page () {
   const slugs = getSlugsInPosts(dir);
   return (
       <div>
-        <h1>This is supporter&apos;s history page</h1>
+        <h1>活動履歴</h1>
         <div>
           {slugs.map(s => (
             <div key={s.slug}>
@@ -18,7 +18,5 @@ export default function Page () {
           ))}
         </div>
       </div>
-
-     
   )
 }
