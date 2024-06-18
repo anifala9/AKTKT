@@ -16,3 +16,6 @@ WorkMailは特定リージョンのみ対応。 us-east-1で対応
 3. SESでのMailFromの設定 をGUIで設定した
 
 4. Publish DNS Record to Route53 ボタンで、 mailfromのDNS設定をやってもらった
+
+5. セキュリティのためのレコード登録 はできているよう
+
