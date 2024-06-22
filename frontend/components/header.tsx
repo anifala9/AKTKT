@@ -11,47 +11,8 @@ export default function Header() {
           <Link
             href="/"
             className="flex text-3xl text-black font-medium mb-4 md:mb-0">
-            AKTKT
+            #安芸高田を動かそう
           </Link>
-          <div className="md:ml-auto md:mr-auto font-4 pt-1 md:pl-14 pl-1 flex flex-wrap items-center md:text-base text-1xl md:justify-center justify-items-start">
-            <div className="relative">
-              <Link
-                href="/politician"
-              >
-                <div className="ml-4">
-                  <p className="text-base font-medium text-black">
-                    政治家
-                  </p>
-                </div>
-              </Link>
-            </div>
-          </div>
-          <div className="md:ml-auto md:mr-auto font-4 pt-1 md:pl-14 pl-1 flex flex-wrap items-center md:text-base text-1xl md:justify-center justify-items-start">
-            <div className="relative">
-              <Link
-                href="/supporter"
-              >
-                <div className="ml-4">
-                  <p className="text-base font-medium text-black">
-                    後援会
-                  </p>
-                </div>
-              </Link>
-            </div>
-          </div>
-          <div className="md:ml-auto md:mr-auto font-4 pt-1 md:pl-14 pl-1 flex flex-wrap items-center md:text-base text-1xl md:justify-center justify-items-start">
-            <div className="relative">
-              <Link
-                href="/future-politician"
-              >
-                <div className="ml-4">
-                  <p className="text-base font-medium text-black">
-                    未来の政治家
-                  </p>
-                </div>
-              </Link>
-            </div>
-          </div>
         </div>
       </div>
     </header>
