@@ -1,47 +1,13 @@
 import '../styles/global.css';
 import Head from 'next/head';
-import utilStyles from '../styles/utils.module.css';
-import Link from 'next/link';
 
-
-type Contents = {
-  link: string,
-  comment: string
-}
-
-const latests : Contents[] = [
-  {
-    link: "/politician/activity/",
-    comment: "Twitter 埋め込み"
-  },
-  {
-    link: "/supporter/history/20231208_2020_election_activity_report",
-    comment: "Markdownでコンテンツを記述できる。Youtube埋め込みも可能"
-  }
-];
 
 export default function Page() {
   return (
     <>
       <Head>
-        <title>AKTKT</title>
+        <title>#安芸高田を動かそう</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>For the future of our town, AKTKT!</p>
-      </section>
-      {<div>
-        更新履歴
-        {latests.map(s => (
-            <div key={s.link}>
-              <Link 
-                href = {s.link} 
-                passHref 
-                key={s.link}>
-              {s.link}   :  {s.comment} 
-              </Link>
-            </div>
-          ))}
-      </div>}
     </>
   );
 }
